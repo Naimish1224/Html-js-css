@@ -14,6 +14,11 @@ $(() => {
     $("#hide").on("click", () => {
         $("table").hide();
     });
+    toggle();
+    $("#copy").on("click", () => {
+        let value = $("#in").val();
+        $("#out").val(value);
+    });
 });
 
 let red = true;
